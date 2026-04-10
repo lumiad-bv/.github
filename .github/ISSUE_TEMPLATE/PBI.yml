@@ -2,7 +2,7 @@
 name: Product Backlog Item
 description: Nieuwe user story / PBI
 title: "[PBI]: "
-type: ["User Story"]
+type: User Story
 body:
   - type: markdown
     attributes:
