@@ -1,0 +1,58 @@
+
+name: "User Story"
+description: "Scrum user story voor software development"
+title: ""
+labels: ["user-story"]
+assignees: []
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ### Richtlijn
+        - Houd de titel kort en actiegericht.
+        - De user story zelf wordt beschreven in het veld **Description**.
+        - Acceptance Criteria bepalen wanneer deze story *Done* is.
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: Beschrijf de user story in het verplichte Als / wil ik / zodat-format.
+      placeholder: |
+        Als [type gebruiker / rol]
+        wil ik [functionaliteit of gedrag]
+        zodat [waarde / doel].
+    validations:
+      required: true
+
+  - type: textarea
+    id: designs-context
+    attributes:
+      label: Designs & Context (optioneel)
+      description: UI-designs, technische context, afhankelijkheden, links, of overige toelichting.
+      placeholder: |
+        - Design / mockup:
+        - Technische context:
+        - Afhankelijkheden:
+        - Links (Figma, ADR, documentatie):
+    validations:
+      required: false
+
+  - type: textarea
+    id: acceptance-criteria
+    attributes:
+      label: Acceptance Criteria
+      description: |
+        Concreet, toetsbaar en uitbreidbaar.
+        Gebruik bij voorkeur Given / When / Then.
+        Iedere regel is een checklist-item.
+      placeholder: |
+        - [ ] Given ...
+              When ...
+              Then ...
+        - [ ] Given ...
+              When ...
+              Then ...
+    validations:
+      required: true
