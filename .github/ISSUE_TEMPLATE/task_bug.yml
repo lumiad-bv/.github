@@ -2,7 +2,7 @@
 name: "🐞Task - Bug"
 description: "Vastleggen van een defect in de software"
 title: "[TASK] Bug: "
-labels: ["Bug"]
+labels: ["bug"]
 type: "Task"
 
 body:
