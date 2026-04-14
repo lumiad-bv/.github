@@ -1,0 +1,129 @@
+
+name: "📝Task – Documentatie"
+description: "Documentatietaak voor het vastleggen van technische, functionele of procesinformatie"
+title: "[TASK] - Documentatie: "
+labels: ["Documentation"]
+type: "Task"
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ### Richtlijn
+        - Deze task is een **subtaak van een User Story** en **wordt altijd als sub‑issue aangemaakt**.
+        - Deze task beschrijft **vooraf** welke documentatie nodig is en waarom.
+        - De documentatie wordt vastgelegd in de daarvoor bedoelde **templates of repositories**.
+
+  - type: markdown
+    attributes:
+      value: |
+        ---
+
+  - type: textarea
+    id: documentation-goal
+    attributes:
+      label: "• Doel van de documentatie"
+      description: Waarom is deze documentatie nodig?
+      placeholder: |
+        Doel:
+        - Vastleggen van …
+        - Overdraagbaarheid verbeteren voor …
+        - Borging voor compliance / audit / onderhoud
+    validations:
+      required: true
+
+  - type: markdown
+    attributes:
+      value: |
+        ---
+
+  - type: textarea
+    id: documentation-scope
+    attributes:
+      label: "• Scope van de documentatie"
+      description: Wat valt wel en niet onder deze documentatie?
+      placeholder: |
+        Binnen scope:
+        - Component / proces / functionaliteit:
+        - Doelgroep (developers, testers, auditors, etc.):
+
+        Buiten scope:
+        - …
+    validations:
+      required: true
+
+  - type: markdown
+    attributes:
+      value: |
+        ---
+
+  - type: textarea
+    id: documentation-type
+    attributes:
+      label: "• Type documentatie"
+      description: Welk type documentatie wordt opgesteld of aangepast?
+      placeholder: |
+        Type documentatie:
+        - PID
+        - Technisch ontwerp
+        - Architectuurbeschrijving
+        - Testrapport
+        - Handleiding
+        - Proces / werkinstructie
+        - Overig
+    validations:
+      required: true
+
+  - type: markdown
+    attributes:
+      value: |
+        ---
+
+  - type: textarea
+    id: location
+    attributes:
+      label: "• Locatie & Vorm"
+      description: Waar wordt deze documentatie vastgelegd?
+      placeholder: |
+        Vastlegging:
+        - Tool (Word, Markdown, Wiki, ADR, etc.):
+        - Locatie (repo, SharePoint, map):
+        - Template (indien van toepassing):
+    validations:
+      required: false
+
+  - type: markdown
+    attributes:
+      value: |
+        ---
+
+  - type: textarea
+    id: expected-outcome
+    attributes:
+      label: "• Verwacht Resultaat"
+      description: Wat moet er beschikbaar zijn als deze task klaar is?
+      placeholder: |
+        Resultaat:
+        - Document bevat …
+        - Informatie is begrijpelijk voor …
+        - Document is actueel en herbruikbaar
+    validations:
+      required: true
+
+  - type: markdown
+    attributes:
+      value: |
+        ---
+
+  - type: textarea
+    id: done-criteria
+    attributes:
+      label: "• Done Criteria"
+      description: Wanneer is deze documentatietaak afgerond?
+      placeholder: |
+        - [ ] Documentatie is opgesteld of bijgewerkt
+        - [ ] Inhoud reflecteert de actuele situatie
+        - [ ] Document volgt afgesproken template/structuur
+        - [ ] Document is opgeslagen op de juiste locatie
+    validations:
+      required: true
