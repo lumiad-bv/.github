@@ -9,7 +9,7 @@ body:
     attributes:
       value: |
         ### Richtlijn
-        - Deze task is een **subtaak van een User Story**.
+        - Deze task is een **subtaak van een User Story** en **wordt altijd als sub‑issue aangemaakt**.
         - Beschrijf **concreet werk** (wat ga je doen), geen gebruikerswaarde.
         - Een task heeft één duidelijk **technisch resultaat** en past binnen één sprint.
 
