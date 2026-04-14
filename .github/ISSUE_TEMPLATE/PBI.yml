@@ -2,7 +2,7 @@
 name: "User Story"
 description: "User Story voor software development"
 title: "US: "
-type: ["User Story"]
+type: "User Story"
 
 body:
   - type: markdown
