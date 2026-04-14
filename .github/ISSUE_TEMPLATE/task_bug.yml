@@ -1,5 +1,5 @@
 
-name: "🐞 Task - Bug"
+name: "🐞Task - Bug"
 description: "Vastleggen van een defect in de software"
 title: "[TASK] Bug: "
 labels: ["Bug"]
