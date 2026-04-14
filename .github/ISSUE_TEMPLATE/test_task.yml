@@ -3,7 +3,7 @@ name: "🔬Task - Testen"
 description: "Testtask voor het voorbereiden, uitvoeren en documenteren van softwaretests"
 title: "[TASK]: Test - "
 type: "Task"
-labels: ["Testing"]
+labels: ["testing"]
 
 body:
   - type: markdown
