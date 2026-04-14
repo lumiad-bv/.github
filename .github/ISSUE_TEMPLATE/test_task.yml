@@ -13,8 +13,8 @@ body:
         - Deze task is een **subtaak van een User Story** en **wordt altijd als sub‑issue aangemaakt**.
         - Deze task beschrijft **vooraf** wat en waarom er getest gaat worden.
         - De uitvoering en vastlegging gebeuren met:
-          - het **[Excel Software Testsheet](https://lumiad.sharepoint.com/:x:/r/sites/development/Gedeelde%20documenten/General/3.%20Document%20templates/20260114_LXT_SoftwareTestSheet_Template.xlsx?d=w893fdbbc91784df9a1a6964d81f40896&csf=1&web=1&e=lNNCtU)**
-          - en het **[Word Testrapport](https://lumiad.sharepoint.com/:w:/r/sites/development/Gedeelde%20documenten/General/3.%20Document%20templates/20260108_LXT_Testrapport_Template.docx?d=w80cdcb21d56a41df9a91273bbe8c260b&csf=1&web=1&e=C5CiMS)**
+          -**[Excel Software Testsheet](https://lumiad.sharepoint.com/:x:/r/sites/development/Gedeelde%20documenten/General/3.%20Document%20templates/20260114_LXT_SoftwareTestSheet_Template.xlsx?d=w893fdbbc91784df9a1a6964d81f40896&csf=1&web=1&e=lNNCtU)**
+          -**[Word Testrapport](https://lumiad.sharepoint.com/:w:/r/sites/development/Gedeelde%20documenten/General/3.%20Document%20templates/20260108_LXT_Testrapport_Template.docx?d=w80cdcb21d56a41df9a91273bbe8c260b&csf=1&web=1&e=C5CiMS)**
 
   - type: markdown
     attributes:
