@@ -1,0 +1,108 @@
+
+name: "Task"
+description: "Subtaak om een User Story te realiseren"
+title: "[TASK]: "
+type: "Task"
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ### Richtlijn
+        - Deze task is een **subtaak van een User Story**.
+        - Beschrijf **concreet werk** (wat ga je doen), geen gebruikerswaarde.
+        - Een task heeft één duidelijk **technisch resultaat** en past binnen één sprint.
+
+  - type: markdown
+    attributes:
+      value: |
+        ---
+
+  - type: textarea
+    id: parent-story
+    attributes:
+      label: "• Gekoppelde User Story"
+      description: Verwijs naar de User Story waarvoor deze task wordt uitgevoerd.
+      placeholder: |
+        Bijvoorbeeld:
+        - #123
+        - [US]: Device registreren
+    validations:
+      required: true
+
+  - type: markdown
+    attributes:
+      value: |
+        ---
+
+  - type: textarea
+    id: task-description
+    attributes:
+      label: "• Task Beschrijving"
+      description: Beschrijf zo concreet mogelijk welke activiteit wordt uitgevoerd.
+      placeholder: |
+        Wat ga ik doen:
+        - Implementeren van …
+        - Aanpassen van …
+
+        Scope van deze task:
+        - Wel inbegrepen:
+        - Niet inbegrepen:
+    validations:
+      required: true
+
+  - type: markdown
+    attributes:
+      value: |
+        ---
+
+  - type: textarea
+    id: task-result
+    attributes:
+      label: "• Resultaat van deze Task"
+      description: Beschrijf het concrete eindresultaat wanneer deze task klaar is.
+      placeholder: |
+        Na afronding van deze task:
+        - Is …
+        - Kan …
+    validations:
+      required: true
+
+  - type: markdown
+    attributes:
+      value: |
+        ---
+
+  - type: textarea
+    id: technical-context
+    attributes:
+      label: "• Technische Context (optioneel)"
+      description: Relevante technische keuzes, impact of richting. Geen uitgebreide designs.
+      placeholder: |
+        - Component / module:
+        - Verwachte aanpak:
+        - Impact op bestaande code:
+        - Afhankelijkheden:
+        - Links (code, ADR, documentatie):
+    validations:
+      required: false
+
+  - type: markdown
+    attributes:
+      value: |
+        ---
+
+  - type: textarea
+    id: done-criteria
+    attributes:
+      label: "• Done Criteria"
+      description: |
+        Wanneer is deze task technisch afgerond?
+        Criteria zijn concreet, verifieerbaar en taak-specifiek.
+      placeholder: |
+        - [ ] Functionaliteit is geïmplementeerd conform scope
+        - [ ] Relevante tests zijn toegevoegd of aangepast
+        - [ ] Code voldoet aan afspraken en is gereviewd
+        - [ ] Build / pipeline is groen
+    validations:
+      required: true
