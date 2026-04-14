@@ -1,0 +1,139 @@
+
+name: "🐞 Bug"
+description: "Vastleggen van een defect in de software"
+title: "[TASK] Bug: "
+labels: ["Bug"]
+type: "Task"
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ### Richtlijn
+        - Een bug beschrijft **wat er fout gaat**, niet hoe het opgelost moet worden.
+        - De bug is **reproduceerbaar** en beschrijft de **impact**.
+        - Een bug kan **los bestaan** of ontstaan als **sub‑issue van een Test Task of User Story**.
+
+  - type: markdown
+    attributes:
+      value: |
+        ---
+
+  - type: textarea
+    id: bug-description
+    attributes:
+      label: "• Beschrijving van het probleem"
+      description: Wat gaat er fout?
+      placeholder: |
+        Beschrijf duidelijk het probleem:
+        - Wat gebeurt er?
+        - Waar treedt het probleem op?
+        - Hoe vaak treedt het op?
+    validations:
+      required: true
+
+  - type: markdown
+    attributes:
+      value: |
+        ---
+
+  - type: textarea
+    id: expected-behaviour
+    attributes:
+      label: "• Verwacht gedrag"
+      description: Wat had er moeten gebeuren volgens verwachting of specificatie?
+      placeholder: |
+        Verwacht gedrag:
+        - Het systeem zou …
+        - De functionaliteit hoort …
+    validations:
+      required: true
+
+  - type: markdown
+    attributes:
+      value: |
+        ---
+
+  - type: textarea
+    id: actual-behaviour
+    attributes:
+      label: "• Actueel gedrag"
+      description: Wat gebeurt er in werkelijkheid?
+      placeholder: |
+        Actueel gedrag:
+        - In plaats daarvan …
+        - Het systeem reageert met …
+    validations:
+      required: true
+
+  - type: markdown
+    attributes:
+      value: |
+        ---
+
+  - type: textarea
+    id: reproduction-steps
+    attributes:
+      label: "• Stappen om te reproduceren"
+      description: Concreet en stap‑voor‑stap.
+      placeholder: |
+        Stappen:
+        1. …
+        2. …
+        3. …
+    validations:
+      required: true
+
+  - type: markdown
+    attributes:
+      value: |
+        ---
+
+  - type: textarea
+    id: environment
+    attributes:
+      label: "• Omgeving / Context"
+      description: In welke context treedt de bug op?
+      placeholder: |
+        Context:
+        - Softwareversie / build:
+        - Omgeving (dev / test / prod):
+        - Device / platform:
+        - Configuratie:
+    validations:
+      required: false
+
+  - type: markdown
+    attributes:
+      value: |
+        ---
+
+  - type: textarea
+    id: impact
+    attributes:
+      label: "• Impact"
+      description: Wat is de impact van deze bug?
+      placeholder: |
+        Impact:
+        - Blokkeert functionaliteit:
+        - Workaround mogelijk (ja/nee):
+        - Gebruikers / processen geraakt:
+    validations:
+      required: true
+
+  - type: markdown
+    attributes:
+      value: |
+        ---
+
+  - type: textarea
+    id: evidence
+    attributes:
+      label: "• Bewijsmateriaal"
+      description: Voeg logs, screenshots of referenties toe indien beschikbaar.
+      placeholder: |
+        Bewijs:
+        - Screenshot / log / video:
+        - Link naar testresultaat of Test Task:
+    validations:
+      required: false
