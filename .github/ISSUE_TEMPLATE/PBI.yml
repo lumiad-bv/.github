@@ -8,7 +8,7 @@ body:
   - type: markdown
     attributes:
       value: |
-        ### • Richtlijn
+        ###Richtlijn
         - Houd de titel kort en actiegericht.
         - Beschrijf de *waarde* van de story, niet de oplossing.
         - Acceptance Criteria bepalen wanneer deze story **Done** is.
