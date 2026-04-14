@@ -19,23 +19,6 @@ body:
         ---
 
   - type: textarea
-    id: parent-story
-    attributes:
-      label: "• Gekoppelde User Story"
-      description: Verwijs naar de User Story waarvoor deze task wordt uitgevoerd.
-      placeholder: |
-        Bijvoorbeeld:
-        - #123
-        - [US]: Device registreren
-    validations:
-      required: true
-
-  - type: markdown
-    attributes:
-      value: |
-        ---
-
-  - type: textarea
     id: task-description
     attributes:
       label: "• Task Beschrijving"
