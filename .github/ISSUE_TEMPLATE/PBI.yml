@@ -1,60 +1,73 @@
-name: Product Backlog Item
-description: Nieuwe user story / PBI
-title: "[PBI]: "
-type: User Story
+
+name: "User Story"
+description: "User Story voor software development"
+title: "US: "
+type: ["User Story"]
+
 body:
   - type: markdown
     attributes:
       value: |
-        ## Product Backlog Item
-        Gebruik dit formulier om een nieuwe User Story aan te maken.
+        • Richtlijn
+        - Houd de titel kort en actiegericht.
+        - Beschrijf de *waarde* van de story, niet de oplossing.
+        - Acceptance Criteria bepalen wanneer deze story **Done** is.
+
+  - type: markdown
+    attributes:
+      value: |
+        ---
 
   - type: textarea
-    id: story
+    id: description
     attributes:
-      label: User story
-      description: Beschrijf de user story
+      label: "• User Story"
+      description: Beschrijf de user story in het verplichte *Als / wil ik / zodat*-format.
       placeholder: |
-        Als <rol>
-        wil ik <functionaliteit>
-        zodat <waarde/doel>
+        Als [type gebruiker / rol]
+        wil ik [functionaliteit of gedrag]
+        zodat [waarde / doel].
     validations:
       required: true
 
-  - type: textarea
-    id: context
+  - type: markdown
     attributes:
-      label: Context / achtergrond
-      description: Extra informatie of randvoorwaarden
+      value: |
+        ---
+
+  - type: textarea
+    id: designs-context
+    attributes:
+      label: "• Designs & Context (optioneel)"
+      description: UI-designs, technische context, afhankelijkheden of links ter ondersteuning.
+      placeholder: |
+        - Design / mockup (C4, flowchart, sequence diagram, etc.):
+        - Technische context / aannames:
+        - Afhankelijkheden:
+        - Links (ADR, documentatie, andere issues):
     validations:
       required: false
 
-  - type: checkboxes
-    id: definition_of_done
+  - type: markdown
     attributes:
-      label: Definition of Done
-      description: Deze punten moeten voldaan zijn voordat de story "Done" is
-      options:
-        - label: Acceptatiecriteria zijn duidelijk en volledig
-          required: true
-        - label: Oplossing is geïmplementeerd en werkt volgens verwachting
-          required: false
-        - label: Tests zijn geschreven en succesvol uitgevoerd
-          required: false
-        - label: Code is gereviewd (PR goedgekeurd)
-          required: false
-        - label: Documentatie is bijgewerkt indien nodig
-          required: false
-        - label: Geen bekende openstaande bugs of regressies
-          required: false
+      value: |
+        ---
 
   - type: textarea
-    id: acceptance_criteria
+    id: acceptance-criteria
     attributes:
-      label: Acceptatiecriteria
+      label: "• Acceptance Criteria"
+      description: |
+        Concreet, toetsbaar en uitbreidbaar.
+        Elke regel is een checklist-item.
+        Gebruik bij voorkeur Given / When / Then.
       placeholder: |
-        - Gegeven ...
-        - Als ...
-        - Dan ...
+        - [ ] Given ...
+              When ...
+              Then ...
+
+        - [ ] Given ...
+              When ...
+              Then ...
     validations:
       required: true
