@@ -1,7 +1,7 @@
 
 name: "📝Task - Documentatie"
 description: "Documentatietaak voor het vastleggen van technische, functionele of procesinformatie"
-title: "[TASK] - Documentatie: "
+title: "[TASK]: Documentatie - "
 labels: ["documentation"]
 type: "Task"
 
