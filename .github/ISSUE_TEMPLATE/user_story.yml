@@ -39,7 +39,7 @@ body:
     id: designs-context
     attributes:
       label: "• Designs & Context (voorstel)"
-      description: Denk na over UI-designs, technische context, afhankelijkheden. Stel jezelf de vraag: Hoe zou ik dit aanpakken? Beschrijf op globaal niveau welke stappen er genomen moeten worden.
+      description: Denk na over UI-designs, technische context, afhankelijkheden. Stel jezelf de vraag - Hoe zou ik dit aanpakken? Beschrijf op globaal niveau welke stappen er genomen moeten worden.
       placeholder: |
         - Design / mockup (C4, flowchart, sequence diagram, etc.):
         - Technische context / aannames:
