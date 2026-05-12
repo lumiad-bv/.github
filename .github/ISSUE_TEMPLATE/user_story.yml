@@ -46,7 +46,7 @@ body:
         - Afhankelijkheden:
         - Links (ADR, documentatie, andere issues):
     validations:
-      required: false
+      required: true
 
   - type: markdown
     attributes:
