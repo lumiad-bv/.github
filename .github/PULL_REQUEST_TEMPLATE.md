@@ -13,12 +13,11 @@ Closes #
 
 ## Ontwerpbeslissing
 
-Vul een van beide regels in.
+Alleen invullen als de story of bug bij *Omvang van de wijziging* "ADR nodig" aangeeft.
 
-ADR nodig, link:
-Geen ADR nodig, omdat:
+ADR, link:
 
-Een ADR is altijd verplicht bij een wijziging van de architectuur of een extern interface, een nieuwe library of framework met structurele impact, en een wijziging van besturingssysteem, toolchain, database of middleware.
+Een ADR is altijd verplicht bij een wijziging van de architectuur of een extern interface, een nieuwe library of framework met structurele impact, en een wijziging van besturingssysteem, toolchain, database of middleware. De ADR is geaccepteerd zodra deze pull request is goedgekeurd; de status in het bestand hoeft niet te worden aangepast.
 
 ## Openstaande bevindingen
 
