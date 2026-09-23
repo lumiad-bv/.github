@@ -147,13 +147,14 @@ body:
     attributes:
       value: |
         ### Risk & Impact
-        Drie keuzes. Twijfel je, kies dan de zwaardere.
+        Drie keuzes. Twijfel je, kies dan de zwaardere. Staat een keuze nog op *Nog niet beoordeeld*, dan is het issue niet ready voor de sprint.
 
   - type: dropdown
     id: security-impact
     attributes:
       label: "• Security-impact"
       options:
+        - "Nog niet beoordeeld"
         - "Geen — raakt geen beveiligingsrelevante onderdelen"
         - "Beperkt — raakt invoer van buiten, logging of foutafhandeling"
         - "Hoog — raakt authenticatie, autorisatie, sleutels of certificaten, of een externe interface"
@@ -166,6 +167,7 @@ body:
       label: "• Persoonsgegevens"
       description: "Bij Ja wordt bij refinement gekeken of de privacytoets van het product dit dekt."
       options:
+        - "Nog niet beoordeeld"
         - "Nee — verwerkt, bewaart of verstuurt geen persoonsgegevens"
         - "Ja — verwerkt, bewaart of verstuurt persoonsgegevens"
     validations:
@@ -176,6 +178,7 @@ body:
     attributes:
       label: "• Omvang van de wijziging"
       options:
+        - "Nog niet beoordeeld"
         - "Lokaal — binnen één component"
         - "Meerdere componenten — interfaces blijven gelijk"
         - "Architectuur, interface, nieuwe library of platform — ADR nodig"
